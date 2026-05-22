@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 600px)" srcset="images/place.jpg">
+                <img src="images/small.jpg" alt="Landscape of Nigeria">
+            </picture>
+        </section>
+        <section class="data">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 923,769 sq km</p>
+            <p><strong>Population:</strong> 218,500,000</p>
+            <p><strong>Capital:</strong> Abuja</p>
+            <p><strong>Languages:</strong> English</p>
+            <p><strong>Currency:</strong> Nigerian Naira</p>
+            <p><strong>Time Zone:</strong> UTC+1</p>
+            <p><strong>Calling Code:</strong> +234</p>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+            <p><strong>Temperature:</strong> <span id="temperature">30</span> °C</p>
+            <p><strong>Conditions:</strong> Sunny</p>
+            <p><strong>Wind:</strong> <span id="windspeed">10</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Nigeria Travel. All rights reserved.</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
