@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form - Godspower</title>
+    <meta name="description" content="Product Review Form for WDD 131">
+    <meta name="author" content="Godspower">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    </header>
+
+    <main>
+        <h1>Product Review Form</h1>
+        <form method="get" action="review.html">
+            
+            <fieldset>
+                <legend>Product Information</legend>
+                <label for="product">Product Name:</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                    <!-- Options populated by JavaScript -->
+                </select>
+
+                <fieldset class="rating-fieldset">
+                    <legend>Overall Rating:</legend>
+                    <div class="stars">
+                        <label><input type="radio" name="rating" value="1" required> 1 ☆</label>
+                        <label><input type="radio" name="rating" value="2" required> 2 ☆</label>
+                        <label><input type="radio" name="rating" value="3" required> 3 ☆</label>
+                        <label><input type="radio" name="rating" value="4" required> 4 ☆</label>
+                        <label><input type="radio" name="rating" value="5" required> 5 ☆</label>
+                    </div>
+                </fieldset>
+
+                <label for="install_date">Date of Installation:</label>
+                <input type="date" id="install_date" name="install_date" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Feedback Details</legend>
+                <fieldset class="features-fieldset">
+                    <legend>Which features did you find useful? (Check all that apply)</legend>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="feature" value="design"> Design/Aesthetics</label>
+                        <label><input type="checkbox" name="feature" value="performance"> Performance</label>
+                        <label><input type="checkbox" name="feature" value="ease_of_use"> Ease of Use</label>
+                        <label><input type="checkbox" name="feature" value="support"> Customer Support</label>
+                    </div>
+                </fieldset>
+
+                <label for="review">Written Review:</label>
+                <textarea id="review" name="review" rows="5" placeholder="Share your experience..."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Information (Optional)</legend>
+                <label for="username">Your Name:</label>
+                <input type="text" id="username" name="username" placeholder="John Doe">
+            </fieldset>
+
+            <input type="submit" value="Post Review" class="submit-btn">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Godspower | Lagos, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

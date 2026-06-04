@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation - Godspower</title>
+    <meta name="description" content="Product Review Confirmation for WDD 131">
+    <meta name="author" content="Godspower">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/review.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    </header>
+
+    <main class="review-main">
+        <h1>Review Submitted</h1>
+        <div class="confirmation-box">
+            <h2>Thank You!</h2>
+            <p>Your product review has been successfully submitted and recorded.</p>
+            <p class="review-counter">
+                You have completed <strong id="review-count">0</strong> reviews!
+            </p>
+            <a href="form.html" class="return-link">Submit Another Review</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Godspower | Lagos, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
