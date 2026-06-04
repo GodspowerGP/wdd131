@@ -1,0 +1,101 @@
+/* Color Palette Variables */
+:root {
+    --primary-color: #E63946; /* Vermilion Red */
+    --secondary-color: #2B2D42; /* Charcoal Dark */
+    --bg-color: #F8F9FA; /* Off-White */
+    --text-color: #333333; /* Dark Gray */
+    
+    --heading-font: 'Noto Serif JP', serif;
+    --paragraph-font: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header h1, header h2 {
+    font-family: var(--heading-font);
+    margin: 5px 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+h2 {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: var(--primary-color);
+}
+
+p, ul, li {
+    font-family: var(--paragraph-font);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 30px 0;
+}
+
+/* Color Palette Display Styles */
+.color-palette {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    border: 1px solid #ccc;
+}
+
+.primary { background-color: var(--primary-color); }
+.secondary { background-color: var(--secondary-color); }
+.background { background-color: var(--bg-color); color: #333; text-shadow: none; }
+.text { background-color: var(--text-color); }
+
+/* Image placeholders */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px dashed var(--secondary-color);
+    display: block;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 8px;
+}
