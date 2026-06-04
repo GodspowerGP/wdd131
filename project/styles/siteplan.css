@@ -1,9 +1,8 @@
-/* Color Palette Variables */
 :root {
-    --primary-color: #E63946; /* Vermilion Red */
-    --secondary-color: #2B2D42; /* Charcoal Dark */
-    --bg-color: #F8F9FA; /* Off-White */
-    --text-color: #333333; /* Dark Gray */
+    --primary-color: #E63946;
+    --secondary-color: #2B2D42;
+    --bg-color: #F8F9FA;
+    --text-color: #333333;
     
     --heading-font: 'Noto Serif JP', serif;
     --paragraph-font: 'Roboto', sans-serif;
@@ -57,7 +56,6 @@ hr {
     margin: 30px 0;
 }
 
-/* Color Palette Display Styles */
 .color-palette {
     display: flex;
     gap: 15px;
@@ -82,7 +80,6 @@ hr {
 .background { background-color: var(--bg-color); color: #333; text-shadow: none; }
 .text { background-color: var(--text-color); }
 
-/* Image placeholders */
 img {
     max-width: 100%;
     height: auto;
