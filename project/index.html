@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyoto Explorer - Home</title>
+    <meta name="description" content="Discover Kyoto, Japan's cultural capital. Explore temples, shrines, and nature with Kyoto Explorer.">
+    <meta name="author" content="Godspower Ulonna">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>🏯 Kyoto Explorer</h1>
+        <button id="menu" aria-label="Toggle Menu"></button>
+        <nav>
+            <ul id="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="planner.html">Trip Planner</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <!-- Using an unsplash source image optimized dynamically by unsplash -->
+            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80" alt="Beautiful temple in Kyoto" loading="lazy">
+            <div class="hero-text">
+                <h2>Welcome to Kyoto</h2>
+                <p>Experience the timeless beauty of Japan's ancient capital.</p>
+                <br>
+                <a href="attractions.html" class="btn">Explore Attractions</a>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Why Visit Kyoto?</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Ancient Temples</h3>
+                    <p>Home to over 1,600 Buddhist temples and 400 Shinto shrines, Kyoto is the historical heart of Japan. Witness stunning architecture and serene zen gardens that have stood for centuries.</p>
+                </div>
+                <div class="card">
+                    <h3>Breathtaking Nature</h3>
+                    <p>From the iconic Arashiyama Bamboo Grove to the vibrant autumn leaves of Kiyomizu-dera, Kyoto offers unparalleled natural beauty across all four seasons.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Kyoto Explorer | Godspower Ulonna</p>
+        <p id="lastModified"></p>
+        <p><a href="references.html">References & Citations</a></p>
+    </footer>
+</body>
+</html>

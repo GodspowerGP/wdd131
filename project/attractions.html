@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyoto Explorer - Attractions</title>
+    <meta name="description" content="Browse the top temples, shrines, and nature spots in Kyoto.">
+    <meta name="author" content="Godspower Ulonna">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/attractions.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>🏯 Kyoto Explorer</h1>
+        <button id="menu" aria-label="Toggle Menu"></button>
+        <nav>
+            <ul id="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html" class="active">Attractions</a></li>
+                <li><a href="planner.html">Trip Planner</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="section-title">Discover Attractions</h2>
+        
+        <div class="filter-nav">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="temple">Temples</button>
+            <button class="filter-btn" data-filter="shrine">Shrines</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+        </div>
+
+        <!-- Populated dynamically via attractions.js -->
+        <div class="attractions-grid" id="attractions-container">
+            <!-- Template rendered by JS -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Kyoto Explorer | Godspower Ulonna</p>
+        <p id="lastModified"></p>
+        <p><a href="references.html">References & Citations</a></p>
+    </footer>
+</body>
+</html>
