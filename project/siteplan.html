@@ -1,84 +1,58 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Plan - Kyoto Explorer</title>
-    <meta name="description" content="Site plan for the Kyoto Explorer WDD 131 project. Outlines the site purpose, color schema, typography choices, and wireframes for a Kyoto travel guide website.">
-    <meta name="author" content="HSEF 2026">
-    <link rel="stylesheet" href="styles/siteplan.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Kyoto Explorer - Home</title>
+    <meta name="description" content="Discover Kyoto, Japan's ancient cultural capital. Explore top temples, serene shrines, and breathtaking nature spots. Plan your perfect Kyoto trip with our interactive guide.">
+    <meta name="author" content="Godspower Ulonna">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Kyoto Explorer - Site Plan</h1>
-        <h2>Godspower Ulonna</h2>
-        <h2>WDD 131</h2>
+        <h1>🏯 Kyoto Explorer</h1>
+        <button id="menu" aria-label="Toggle Menu"></button>
+        <nav>
+            <ul id="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="planner.html">Trip Planner</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <hr>
-        <h2>Overview</h2>
-        
-        <h3>Site Name</h3>
-        <p><strong>Kyoto Explorer</strong></p>
-        <p>I chose this name because it directly communicates the purpose of the website: exploring the historical and cultural city of Kyoto, Japan. It invites users to discover attractions, local tips, and plan their visit. It allows for a highly visual and engaging design.</p>
-        <p>Domain: kyoto-explorer.com (Optional)</p>
-        <img src="images/logo.png" alt="Kyoto Explorer Logo Placeholder" width="200" height="200">
+        <section class="hero">
+            <!-- Using an unsplash source image optimized dynamically by unsplash -->
+            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80" alt="Beautiful temple in Kyoto" loading="lazy">
+            <div class="hero-text">
+                <h2>Welcome to Kyoto</h2>
+                <p>Experience the timeless beauty of Japan's ancient capital.</p>
+                <br>
+                <a href="attractions.html" class="btn">Explore Attractions</a>
+            </div>
+        </section>
 
-        <hr>
-        <h3>Site Purpose</h3>
-        <p>The purpose of Kyoto Explorer is to serve as a comprehensive visitor guide. It aims to help tourists plan their trip by highlighting the top attractions (temples, shrines, and nature), offering practical resources/tips for getting around, and providing an interactive experience like a packing list or a filterable attractions catalog.</p>
-
-        <hr>
-        <h3>Scenarios</h3>
-        <ul>
-            <li>What are the best outdoor shrines and temples to visit in Kyoto during the autumn season?</li>
-            <li>Where can I find an interactive packing list to make sure I don't forget essential items for my trip to Japan?</li>
-            <li>Is there an easy way to filter attractions between indoor museums and outdoor hikes?</li>
-        </ul>
-
-        <hr>
-        <h2>Design Strategy</h2>
-        
-        <h3>Color Schema</h3>
-        <p>The color scheme is inspired by traditional Japanese aesthetics, featuring a deep vermilion red (reminiscent of shrine gates) and an elegant dark charcoal, balanced with soft whites and grays. We chose this schema because it provides a strong, cultural identity while ensuring readable contrast.</p>
-        <ul>
-            <li><strong>Primary Color (Vermilion Red - #E63946):</strong> Used for accents, buttons, and prominent headings to draw attention.</li>
-            <li><strong>Secondary Color (Charcoal Dark - #2B2D42):</strong> Used for dark mode backgrounds, footer, and navigation bar to provide a sleek, modern look.</li>
-            <li><strong>Background Color (Off-White - #F8F9FA):</strong> Used for the main body background to keep the content readable and clean.</li>
-            <li><strong>Text Color (Dark Gray - #333333):</strong> Used for standard paragraph text.</li>
-        </ul>
-        
-        <div class="color-palette">
-            <div class="color-box primary">#E63946</div>
-            <div class="color-box secondary">#2B2D42</div>
-            <div class="color-box background">#F8F9FA</div>
-            <div class="color-box text">#333333</div>
-        </div>
-
-        <hr>
-        <h3>Typography</h3>
-        <p>The typography pairs a modern sans-serif for readability with an elegant serif font to reflect the cultural depth of Kyoto.</p>
-        <ul>
-            <li><strong>Heading Font: 'Noto Serif JP', serif</strong> - This font will be used for all <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, and <code>&lt;h3&gt;</code> tags. It provides an elegant, traditional feel suited for a Japanese cultural guide.</li>
-            <li><strong>Paragraph Font: 'Roboto', sans-serif</strong> - This font will be used for standard body text, lists, and navigation links. It is highly readable across different devices.</li>
-        </ul>
-
-        <hr>
-        <h3>Wireframes</h3>
-        <p>Below are the wireframes for the Home Page layout in both mobile and desktop views. It features a hero image, a quick navigation section, and a preview of attractions.</p>
-        
-        <h4>Mobile Wireframe</h4>
-        <img src="images/mobile-wireframe.png" alt="Mobile Wireframe Preview" width="300">
-        
-        <h4>Desktop Wireframe</h4>
-        <img src="images/desktop-wireframe.png" alt="Desktop Wireframe Preview" width="800">
-
+        <section>
+            <h2 class="section-title">Why Visit Kyoto?</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Ancient Temples</h3>
+                    <p>Home to over 1,600 Buddhist temples and 400 Shinto shrines, Kyoto is the historical heart of Japan. Witness stunning architecture and serene zen gardens that have stood for centuries.</p>
+                </div>
+                <div class="card">
+                    <h3>Breathtaking Nature</h3>
+                    <p>From the iconic Arashiyama Bamboo Grove to the vibrant autumn leaves of Kiyomizu-dera, Kyoto offers unparalleled natural beauty across all four seasons.</p>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2026 🎈 Kyoto Explorer 🎈 WDD 131</p>
+        <p>&copy; <span id="currentyear"></span> | Kyoto Explorer | Godspower Ulonna</p>
+        <p id="lastModified"></p>
+        <p><a href="references.html">References & Citations</a></p>
     </footer>
 </body>
 </html>
