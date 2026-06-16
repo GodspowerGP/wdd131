@@ -28,7 +28,7 @@ header {
 }
 
 header h1, header h2 {
-    font-family: var(--heading-font);
+   
     margin: 5px 0;
 }
 
