@@ -100,9 +100,27 @@ h1 {
     display: block;
 }
 
-.card p {
+.card p, .card ul {
     padding: 20px;
     font-size: 16px;
+}
+
+.card ul {
+    list-style-position: inside;
+}
+
+.card li {
+    margin-bottom: 10px;
+}
+
+.card a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.card a:hover {
+    text-decoration: underline;
 }
 
 footer {
